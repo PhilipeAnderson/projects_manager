@@ -5,7 +5,17 @@
   font-family: 'Roboto';
 }
 
+:root{
+  --colorDefault: #0099bb;
+  --colorLight: #a7d9e4;
+  --colorDark: #005c70;
+
+  --backgroundElements: #bdc4c5;
+
+  --background: #efefef;
+}
+
 html, body, #root{
-  background-color: #efefef;
+  background-color: var(--background);
   height: 100%;
 }

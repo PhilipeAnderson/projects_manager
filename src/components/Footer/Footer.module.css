@@ -1,0 +1,51 @@
+.footer{
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    background-color: var(--backgroundElements);
+}
+
+.content{
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content h3{
+    color: var(--colorDark);
+    transition: 0.8s;
+}
+
+.content h3:hover{
+    color: var(--colorDefault);
+}
+
+.nets{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nets li{
+    list-style: none;
+    padding: 5px;
+    font-size: 32px;
+    
+}
+
+.nets li a{
+    text-decoration: none;
+    color: var(--colorDefault);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.nets li a:hover{
+    color: var(--colorDark)
+}
