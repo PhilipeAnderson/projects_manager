@@ -17,14 +17,15 @@ function App() {
         <Link to="/company">Company</Link>
         <Link to="/contact">Contact</Link>
       </ul>
-        <Container>
-      <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/newproject" element={<NewProject />} />
-          <Route path="/company" element={<Company />} />
-          <Route path="/contact" element={<Contact />} />
-      </Routes>
-        </Container>
+      <Container customClass="min-height">
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/newproject" element={<NewProject />} />
+            <Route path="/company" element={<Company />} />
+            <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Container>
+      <p>Footer</p>
     </Router>
   );
 }
