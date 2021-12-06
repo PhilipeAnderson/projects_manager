@@ -14,11 +14,11 @@
 }
 
 .menu ul li a{
-    color: var(--colorDefault);
+    color: var(--colorDark);
     font-size: 1.1em;
     text-decoration: none;
 }
 
 .menu ul li a:hover{
-    color: var(--colorDark);
+    color: var(--colorDefault);
 }

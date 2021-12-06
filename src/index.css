@@ -13,6 +13,8 @@
   --backgroundElements: #bdc4c5;
 
   --background: #efefef;
+
+  --backgroundImage: url('./assets/img/logo.png');
 }
 
 html, body, #root{
