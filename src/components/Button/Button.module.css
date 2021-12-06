@@ -1,0 +1,8 @@
+.button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: var(--colorDark);
+    background-color: var(--colorLight);
+}
