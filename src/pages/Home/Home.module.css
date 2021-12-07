@@ -4,39 +4,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: -6em;
 }
 
 .main h1{
     font-size: 3em;
     color: var(--colorDark);
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+}
+
+.main p{
+    margin-bottom: 2em;
 }
 
 .content{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2em;
+    margin-top: 5em;
     
 }
 
 .content img{
     width: 500px;
-    margin-right: 2em;
-}
-
-.content p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3em;
-}
-
-.text{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: justify;
-}
-
-.text p{
-    margin-bottom: 0.8em;
 }
