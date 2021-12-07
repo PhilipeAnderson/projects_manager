@@ -3,6 +3,14 @@
     height: 40px;
     border: none;
     border-radius: 5px;
+    padding: 0.6em 1.2em;
+    text-decoration: none;
+    transition: 0.7s;
     color: var(--colorDark);
     background-color: var(--colorLight);
+}
+
+.button:hover{
+    color: var(--colorLight);
+    background-color: var(--colorDark);
 }

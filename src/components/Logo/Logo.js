@@ -4,12 +4,12 @@ import styles from './Logo.module.css';
 
 import logo from '../../assets/img/logo.png';
 
-export function Logo(){
-    return(
-        <div className={styles.logo}>
-            <Link to="/">
-                <img src={ logo } alt="Logo do Projeto" />
-            </Link>
-        </div>
-    )
+export function Logo() {
+	return (
+		<div className={styles.logo}>
+			<Link to="/">
+				<img src={logo} alt="Logo do Projeto" />
+			</Link>
+		</div>
+	)
 }

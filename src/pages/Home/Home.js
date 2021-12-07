@@ -11,7 +11,7 @@ export function Home() {
 			It's easy it's fast!
 			</p>
 			
-			<Button name="Create Project" />
+			<Button to="/newProject" name="Create Project" />
 					
 			<div className={styles.content}>
 				<img src={DrawImage} alt="Desenho de Capa" />
