@@ -13,9 +13,14 @@ export function SelectForm(
   return(
     <div className={styles.select}>
       <label htmlFor={ selectName }>{ text }</label>
-      <select name={ name } id={ id }>
+      <select 
+        name={ name } 
+        id={ id } 
+        onChange={ handleOnChange } 
+        value={ value || ''}
+        >
         <option>Selecione uma opção</option>
-        {options.map((option) => (
+        {options.map(option => (
           <option value={option.id} key={option.id}>{option.name}</option>
         ))}
       </select>

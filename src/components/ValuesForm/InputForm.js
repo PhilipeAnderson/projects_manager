@@ -9,18 +9,13 @@ export function InputForm(
     name, 
     id, 
     placeholder, 
-    value, 
-    handleOnChange 
+    handleOnChange, 
+    value
   }
 ){
   return(
     <div className={styles.input}>
-      <label 
-        htmlFor={ labelName }
-        >
-        { text }
-      </label>
-
+      <label htmlFor={ labelName }>{ text }</label>
       <input 
         type={ type } 
         name={ name } 
