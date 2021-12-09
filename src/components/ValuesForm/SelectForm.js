@@ -1,28 +1,19 @@
 import styles from './SelectForm.module.css';
 
-export function SelectForm(
-  { 
-    selectName,
-    text,
-    name,
-    id,
-    options,
-    handleOnChange,
-    value
-  }){
+export function SelectForm({ text, name, options, handleOnChange, value }){
   return(
     <div className={styles.select}>
-      <label htmlFor={ selectName }>{ text }</label>
+      <label htmlFor={ name }>{ text }</label>
       <select 
-        name={ name } 
-        id={ id } 
-        onChange={ handleOnChange } 
+        name={ name }
+        id={ name }
+        onChange={ handleOnChange }
         value={ value || ''}
         >
         <option>Selecione uma opção</option>
         {options.map(option => (
           <option value={option.id} key={option.id}>{option.name}</option>
-        ))}
+        ))};
       </select>
     </div>
   )

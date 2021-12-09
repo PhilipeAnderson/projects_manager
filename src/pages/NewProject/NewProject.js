@@ -17,7 +17,7 @@ export function NewProject(){
         fetch('http://localhost:5000/projects', {
             method: 'POST',
             headers: {
-                'Copntent-Type': 'application/json'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(project) 
         }).then(resp => resp.json())
@@ -32,7 +32,7 @@ export function NewProject(){
         <div className={styles.container}>
             <h1>Insert a new project</h1>
             <p>Create a new project and add services to it</p>
-            <ProjectForm handleSubmit={createPost} whatHappen="Created Project"/>
+            <ProjectForm handleSubmit={ createPost } whatHappen="Created Project"/>
         </div>
     )
 }

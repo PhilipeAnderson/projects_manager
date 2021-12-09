@@ -25,16 +25,16 @@ export function ProjectForm({ handleSubmit, whatHappen, projectData }) {
   }, []);
 
   const submit = (e) => {
-    e.preventDefault()
-    handleSubmit(project)
-  }
+    e.preventDefault();
+    handleSubmit(project);
+  };
 
   function handleChange(e){
     setProject({
       ...project, 
       [e.target.name]: e.target.value
-    })
-  }
+    });
+  };
   
   function handleCategory(e){
     setProject({
@@ -43,34 +43,30 @@ export function ProjectForm({ handleSubmit, whatHappen, projectData }) {
       id: e.target.value,
       name: e.target.options[e.target.selectedIndex].text
       }
-    })
-  }
+    });
+  };
 
   return (
-    <form onSubmit={submit} className={styles.form}>
+    <form onSubmit={ submit } className={styles.form}>
       <InputForm 
-        labelName="nameProject" 
+        type="text"
         text="Project Name" 
-        type="text" 
-        name="nameProject" 
-        id="nameProject" 
+        name="name" 
         placeholder="Insert the name project" 
         handleOnChange={handleChange} 
         value={project.name ? project.name : ''}
       />
       <InputForm
-        labelName="valueBudget" 
-        text="Project Value" 
-        type="number" 
-        name="valueBudget" 
-        id="valueBudget" 
+        type="number"
+        text="Project Value"
+        name="budget"
         placeholder="Enter the budget amount"
         handleOnChange={handleChange}
         value={project.budget ? project.budget : ''}
       />
       <SelectForm 
-        name="category_id"
         text="Select a Category"
+        name="category_id"
         options={categories}
         handleOnChange={handleCategory}
         value={project.category ? project.category.id : ''}

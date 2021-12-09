@@ -5,14 +5,14 @@
 }
 
 .input label{
-  margin-bottom: 0.6em;
+  margin-bottom: .6em;
   font-weight: bold;
 }
 
 .input input{
-  padding: 0.7em;
+  padding: .7em;
   border: none;
-  border-radius: 0.5em;
+  border-radius: .5em;
 }
 
 .input input::placeholder{
