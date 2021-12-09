@@ -1,0 +1,21 @@
+.message{
+  width: 100%;
+  padding: 1em;
+  border: none;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2em;
+  border-radius: 5px;
+}
+
+.success{
+  color: var(--colorFont);
+  font-size: 18px;
+  background-color: var(--backgroundSuccess)
+}
+
+.error{
+  color: var(--colorFont);
+  font-size: 18px;
+  background-color: var(--backgroundError)
+}

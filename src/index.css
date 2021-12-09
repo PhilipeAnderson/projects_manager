@@ -10,9 +10,13 @@
   --colorLight: #a7d9e4;
   --colorDark: #005c70;
 
+  --colorFont: #fff;
+
   --backgroundElements: #bdc4c5;
 
   --background: #efefef;
+  --backgroundSuccess: #87e66a;
+  --backgroundError: #eb7777;
 
   --backgroundImage: url('./assets/img/logo.png');
 }
