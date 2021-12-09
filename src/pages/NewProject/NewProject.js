@@ -1,4 +1,4 @@
-// import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { ProjectForm } from '../../components/ProjectForm/ProjectForm';
 import styles from './NewProject.module.css';
@@ -7,7 +7,7 @@ import styles from './NewProject.module.css';
 
 export function NewProject(){
 
-    //const history = useHistory();
+    const navigate = useNavigate();
 
     function createPost(project){
 
@@ -23,6 +23,7 @@ export function NewProject(){
         }).then(resp => resp.json())
           .then(data => {
               console.log(data)
+              navigate('/projects', { message: 'Projeto criado com sucesso!' })
           })
           .catch(err => console.log(err))  
     }
