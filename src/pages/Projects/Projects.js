@@ -1,8 +1,9 @@
 import { useLocation } from 'react-router-dom';
 import { Message } from '../../Layout/Message';
-import styles from './Projects.module.css';
 import { Container } from '../../Layout/Container';
 import { Button } from '../../components/Button/Button'
+
+import styles from './Projects.module.css';
 
 export function Projects(){
 

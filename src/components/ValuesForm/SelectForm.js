@@ -4,7 +4,7 @@ export function SelectForm({ text, name, options, handleOnChange, value }){
   return(
     <div className={styles.select}>
       <label htmlFor={ name }>{ text }</label>
-      <select 
+      <select
         name={ name }
         id={ name }
         onChange={ handleOnChange }

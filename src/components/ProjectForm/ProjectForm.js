@@ -48,12 +48,12 @@ export function ProjectForm({ handleSubmit, whatHappen, projectData }) {
 
   return (
     <form onSubmit={ submit } className={styles.form}>
-      <InputForm 
+      <InputForm
         type="text"
-        text="Project Name" 
-        name="name" 
-        placeholder="Insert the name project" 
-        handleOnChange={handleChange} 
+        text="Project Name"
+        name="name"
+        placeholder="Insert the name project"
+        handleOnChange={handleChange}
         value={project.name ? project.name : ''}
       />
       <InputForm
@@ -64,7 +64,7 @@ export function ProjectForm({ handleSubmit, whatHappen, projectData }) {
         handleOnChange={handleChange}
         value={project.budget ? project.budget : ''}
       />
-      <SelectForm 
+      <SelectForm
         text="Select a Category"
         name="category_id"
         options={categories}
