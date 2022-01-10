@@ -3,6 +3,6 @@
 
 export function Created(){
   return(
-    <h1>Crated</h1>
+    <h1>Created</h1>
   )
 }

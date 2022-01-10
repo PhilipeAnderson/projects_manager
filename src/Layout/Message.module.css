@@ -1,7 +1,7 @@
 .message{
   width: 100%;
   padding: 1em;
-  border: none;
+  border: 1px solid #000;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2em;
@@ -11,11 +11,13 @@
 .success{
   color: var(--colorFont);
   font-size: 18px;
-  background-color: var(--backgroundSuccess)
+  background-color: var(--backgroundSuccess);
+  border-color: #c3e6cb;
 }
 
 .error{
   color: var(--colorFont);
   font-size: 18px;
-  background-color: var(--backgroundError)
+  background-color: var(--backgroundError);
+  border-color: #c3e6cb;
 }
