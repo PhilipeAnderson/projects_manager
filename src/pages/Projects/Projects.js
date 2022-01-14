@@ -42,7 +42,13 @@ import styles from './Projects.module.css';
       <Container customClass="start">
         {projects.length > 0 && projects.map(project => {
           return(
-            <ProjectCard name={project.name}/>
+            <ProjectCard
+              id={project.id}
+              key={project.id}
+              name={project.name}
+              budget={project.budget}
+              category={project.category.name}
+            />
           )
         })}
       </Container>

@@ -32,6 +32,50 @@
       "cost": 0,
       "services": [],
       "id": 3
+    },
+    {
+      "name": "Mais um projeto",
+      "budget": "5000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Novo Projeto",
+      "budget": "4000",
+      "category": {
+        "id": "3",
+        "name": "Designer"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "executar",
+      "budget": "440",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    },
+    {
+      "name": "Antigo muro da escola",
+      "budget": "500",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 7
     }
   ],
   "categories": [
