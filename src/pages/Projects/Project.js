@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Loading } from '../../Layout/Loading';
 import { Container } from '../../Layout/Container';
-import { ProjectCard } from './ProjectCard';
 import { ProjectForm} from '../../components/ProjectForm/ProjectForm';
 
 import styles from './Project.module.css';
@@ -31,8 +30,8 @@ export function Project(){
     setShowProjectForm(!showProjectForm)
   }
 
-  function handleEditForm() {
-    console.log("Hy")
+  function handleEditForm(project) {
+    
   }
 
   return(
