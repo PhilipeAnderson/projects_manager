@@ -30,12 +30,11 @@ import styles from './Projects.module.css';
     })
     .then(response => response.json())
     .then(data => {
-      console.log(data)
       setProjects(data)
       setRemoveLoading(true);
     })
     .catch(err => console.log(err))
-    }, 1000);
+    }, 1000)
   }, []);
 
   function removeProject(id) {
@@ -73,9 +72,9 @@ import styles from './Projects.module.css';
           )
         })}
         {!removeLoading && <Loading />}
-        {/* {removeLoading && projects.length === 0 (
+        {removeLoading && projects.length === 0 && (
           <p>Não há projetos cadastrados!</p>
-        )} */}
+        )}
       </Container>
     </div>
   )
