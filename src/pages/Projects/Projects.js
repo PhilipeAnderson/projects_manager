@@ -34,7 +34,7 @@ import styles from './Projects.module.css';
       setRemoveLoading(true)
     })
     .catch(err => console.log(err))
-    }, 1000)
+    }, 1300)
   }, []);
 
   function removeProject(id) {

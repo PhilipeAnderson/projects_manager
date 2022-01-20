@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Loading } from '../../Layout/Loading';
 import { Container } from '../../Layout/Container';
 import { ProjectCard } from './ProjectCard';
-// import { ProjectForm} from './ProjectForm';
+import { ProjectForm} from '../../components/ProjectForm/ProjectForm';
 
 import styles from './Project.module.css';
 
@@ -24,45 +24,51 @@ export function Project(){
     }).then(response => response.json())
       .then(data => setProject(data))
       .catch(err => console.log(err))
-    }, 1000)
+    }, 1300)
   }, [id])
 
   function toogleProjectForm() {
     setShowProjectForm(!showProjectForm)
   }
 
+  function handleEditForm() {
+    console.log("Hy")
+  }
+
   return(
     <>
       {project.name ? (
-        <div>
+        <div className={styles.projectContainer}>
           <Container customClass="column">
             <div>
-              <h1>Projeto: {project.name}</h1>
-              <button 
-                onClick={toogleProjectForm}
-              >
-                {!showProjectForm ? "Editar Projeto" : "Fechar Projeto"}
-              </button>
+              <div className={styles.projectDetails}>
+                <h1>Project:</h1>
+                <button
+                  onClick={toogleProjectForm}
+                >
+                  {!showProjectForm ? "Editar Projeto" : "Fechar Projeto"}
+                </button>
+              </div>
               {!showProjectForm ? (
-                <div>
-                  <ProjectCard 
-                    id={project.id}
-                    key={project.id}
-                    name={project.name}
-                    budget={project.budget}
-                    category={project.category.name}
-                  />
+                <div className={styles.details}>
+                  <h2>Name: {project.name}</h2>
+                  <h3>Category: {project.category.name}</h3>
+                  <h3>Budget: $: {project.budget},00</h3>
+                  <h3>Cost: $: {project.cost},00</h3>
+                  <h3>Services: {project.services} ***</h3>
                 </div>
               ) : (
-                <div>
-                  <p>Detalhes do Projeto</p>
+                <div className={styles.projectForm}>
+                  <ProjectForm handleSubmit={handleEditForm} projectData={project} whatHappen="Salvar Edição"/>
                 </div>  
               )}
             </div>
           </Container>
         </div> 
       ) : (
-        <Loading />
+        <div className={styles.loading}>
+          <Loading />
+        </div>
       )}
     </>
   )
