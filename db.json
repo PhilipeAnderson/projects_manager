@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "Philipe",
-      "budget": "1245",
+      "name": "Venda de Ingressos",
+      "budget": "1234",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -10,17 +10,6 @@
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "name": "outro projeto",
-      "budget": "5465",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
     }
   ],
   "categories": [

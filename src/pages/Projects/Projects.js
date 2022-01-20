@@ -31,7 +31,7 @@ import styles from './Projects.module.css';
     .then(response => response.json())
     .then(data => {
       setProjects(data)
-      setRemoveLoading(true);
+      setRemoveLoading(true)
     })
     .catch(err => console.log(err))
     }, 1000)

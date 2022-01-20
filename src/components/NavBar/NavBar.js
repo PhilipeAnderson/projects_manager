@@ -13,6 +13,9 @@ export function NavBar() {
 					<Link className={styles.link} to="/newproject">New Project</Link>
 				</li>
 				<li>
+					<Link className={styles.link} to="/projects">Projects</Link>
+				</li>
+				<li>
 					<Link className={styles.link} to="/contact">Contact</Link>
 				</li>
 
