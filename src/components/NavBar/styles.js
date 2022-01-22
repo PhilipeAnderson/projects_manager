@@ -24,4 +24,41 @@ export const Container = styled.nav`
 			}
 		}    
 	}
+
+	@media(max-width: 720px){
+		ul{
+			visibility: hidden;
+		}
+	}
+}
+
+`;
+
+export const MenuIcon = styled.div`
+	position: absolute;
+	visibility: hidden;
+	width: 40px;
+	height: 40px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	border-radius: 50%;
+	background-color: #00a1b3;
+	margin-top: -9px;
+  margin-left: 229px;
+
+	@media(max-width: 720px){
+			visibility: visible;
+	}
+
+	@media(max-width: 500px){
+			margin-left: 200px;
+	}
+
+	@media(max-width: 430px){
+			margin-top: 0px;
+			margin-left: 190px;
+	}
 `;

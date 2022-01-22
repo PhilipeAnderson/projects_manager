@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-	max-width: 100%;
+
+
+	width: 100%;
 	height: 60px;
 	margin-top: 30px;
 
@@ -9,4 +11,8 @@ export const Container = styled.header`
 	justify-content: space-around;
 	align-items: center;
 	background-color: var(--backgroundElements);
+
+	@media (max-width: 768px){
+		font-size: 1rem;
+	}
 `;

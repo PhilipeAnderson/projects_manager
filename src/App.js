@@ -10,7 +10,9 @@ import { Project } from './pages/Projects/Project';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 
+import { GlobalStyle } from './global.js';
 import { Container } from './Layout/Container';
+
 
 function App() {
   return (
@@ -26,7 +28,9 @@ function App() {
         </Routes>
       </Container>
       <Footer />
+      <GlobalStyle />
     </Router>
+    
   );
 }
 
