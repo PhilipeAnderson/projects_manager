@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
-import styles from './Button.module.css';
+import { ButtonStyles } from './styles.js';
 
 
 export function Button({ to, name }) {
 	return (
-		<Link className={styles.button} to={to}>
-			{ name }
-		</Link>
+		<ButtonStyles>
+			<Link to={to}>
+				{name}
+			</Link>
+		</ButtonStyles>
 	)
 }
