@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { FormStyles } from './styles.js';
 import { InputForm } from '../ValuesForm/InputForm/InputForm';
 import { SelectForm } from '../ValuesForm/SelectForm/SelectForm';
-import { SubmitForm } from '../ValuesForm/SubmitForm';
+import { SubmitForm } from '../ValuesForm/SubmitForm/SubmitForm';
 
 export function ProjectForm({ handleSubmit, whatHappen, projectData }) {
 
