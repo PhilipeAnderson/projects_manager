@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import styles from './ProjectForm.module.css';
+import { FormStyles } from './styles.js';
 import { InputForm } from '../ValuesForm/InputForm';
 import { SelectForm } from '../ValuesForm/SelectForm';
 import { SubmitForm } from '../ValuesForm/SubmitForm';
@@ -47,7 +47,7 @@ export function ProjectForm({ handleSubmit, whatHappen, projectData }) {
   };
 
   return (
-    <form onSubmit={ submit } className={styles.form}>
+    <FormStyles onSubmit={ submit }>
       <InputForm
         type="text"
         text="Project Name"
@@ -72,6 +72,6 @@ export function ProjectForm({ handleSubmit, whatHappen, projectData }) {
         value={project.category ? project.category.id : ''}
       />
       <SubmitForm text={ whatHappen }/>
-    </form>
+    </FormStyles>
   )
 }

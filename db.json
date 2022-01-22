@@ -10,6 +10,17 @@
       "cost": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "name": "dededededede",
+      "budget": "1234",
+      "category": {
+        "id": "3",
+        "name": "Designer"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [
