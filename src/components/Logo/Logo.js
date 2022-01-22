@@ -1,15 +1,13 @@
 import { Link } from 'react-router-dom';
-
-import styles from './Logo.module.css';
-
+import { Container } from './styles.js';
 import logo from '../../assets/img/logo.png';
 
 export function Logo() {
 	return (
-		<div className={styles.logo}>
+		<Container>
 			<Link to="/">
 				<img src={logo} alt="Logo do Projeto" />
 			</Link>
-		</div>
+		</Container>
 	)
 }

@@ -1,14 +1,13 @@
 import { Logo } from '../Logo/Logo';
 import { NavBar } from '../NavBar/NavBar';
 
-import styles from './Header.module.css'
+import { Container } from './styles.js';
 
-
-export function Header(){
-    return(
-    <header className={styles.header}>
+export function Header() {
+  return (
+    <Container>
       <Logo />
       <NavBar />
-    </header>
-    )
+    </Container>
+  )
 }
