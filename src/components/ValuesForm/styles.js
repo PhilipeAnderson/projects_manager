@@ -1,4 +1,6 @@
-.button{
+import styled from 'styled-components';
+
+export const ButtonSubmitFormStyles = styled.button`
   width: 355px;
   height: 40px;
   margin-top: 1em;
@@ -9,9 +11,9 @@
   transition: 0.7s;
   color: var(--colorDark);
   background-color: var(--colorLight);
-}
 
-.button:hover{
-  color: var(--colorLight);
-  background-color: var(--colorDark);
-}
+  &:hover{
+    color: var(--colorLight);
+    background-color: var(--colorDark);
+  }
+`;

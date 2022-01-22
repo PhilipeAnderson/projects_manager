@@ -1,12 +1,11 @@
-import styles from './SubmitForm.module.css';
+import { ButtonSubmitFormStyles } from './styles.js';
 
 
 export function SubmitForm({ text }){
   return(
-    <div>
-      <button className={styles.button}>
+      <ButtonSubmitFormStyles>
         { text }
-      </button>
-    </div>
+      </ButtonSubmitFormStyles>
+    
   )
 }

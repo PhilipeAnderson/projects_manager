@@ -1,26 +1,40 @@
 {
   "projects": [
     {
-      "name": "Venda de Ingressos",
-      "budget": "1234",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
       "cost": 0,
       "services": [],
       "id": 1
     },
     {
-      "name": "dededededede",
-      "budget": "1234",
-      "category": {
-        "id": "3",
-        "name": "Designer"
-      },
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "budget": "423424",
+      "name": "Venda de Ingressos",
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "categories": [

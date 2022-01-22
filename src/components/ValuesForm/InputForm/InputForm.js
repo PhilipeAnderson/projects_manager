@@ -1,9 +1,8 @@
-import styles from './InputForm.module.css';
-
+import { InputStyles } from './styles.js';
 
 export function InputForm({ name, text, type, placeholder, handleOnChange, value }){
   return(
-    <div className={styles.input}>
+    <InputStyles>
       <label htmlFor={ name }>{ text }:</label>
       <input 
         type={ type } 
@@ -13,6 +12,6 @@ export function InputForm({ name, text, type, placeholder, handleOnChange, value
         onChange={ handleOnChange }
         value={ value }
         />
-    </div>
+    </InputStyles>
   )
 }

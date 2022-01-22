@@ -1,8 +1,8 @@
-import styles from './SelectForm.module.css';
+import { SelectStyles } from './styles.js';
 
 export function SelectForm({ text, name, options, handleOnChange, value }){
   return(
-    <div className={styles.select}>
+    <SelectStyles>
       <label htmlFor={ name }>{ text }</label>
       <select
         name={ name }
@@ -15,6 +15,6 @@ export function SelectForm({ text, name, options, handleOnChange, value }){
           <option value={option.id} key={option.id}>{option.name}</option>
         ))};
       </select>
-    </div>
+    </SelectStyles>
   )
 }
