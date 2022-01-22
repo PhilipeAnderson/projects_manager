@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Loading } from '../../Layout/Loading';
+import { Loading } from '../../Layout/Loading/Loading';
 import { Container } from '../../Layout/Container';
 import { ProjectForm} from '../../components/ProjectForm/ProjectForm';
 

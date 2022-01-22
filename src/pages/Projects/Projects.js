@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { ProjectCard } from './ProjectCard';
 import { Container } from '../../Layout/Container';
 import { Message } from '../../Layout/Message';
-import { Loading } from '../../Layout/Loading';
+import { Loading } from '../../Layout/Loading/Loading';
 import { Button } from '../../components/Button/Button';
 
 import styles from './Projects.module.css';
