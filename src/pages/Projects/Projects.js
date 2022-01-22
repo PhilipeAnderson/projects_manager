@@ -64,9 +64,9 @@ import styles from './Projects.module.css';
             <ProjectCard
               id={project.id}
               key={project.id}
-              // name={project.name}
+              name={project.name}
               budget={project.budget}
-              // category={project.category.name}
+              category={project.category.name}
               handleRemove={removeProject}
             />
           )
