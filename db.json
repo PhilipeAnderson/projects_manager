@@ -1,5 +1,16 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Philipe Anderson De Campos",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,

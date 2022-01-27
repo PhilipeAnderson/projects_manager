@@ -1,22 +1,23 @@
-import styles from './Home.module.css'
-import DrawImage from '../../assets/img/drawImage.png'
-import { Button } from '../../components/Button/Button'
+import { Button } from '../../components/Button/Button';
+import { MainStyles } from './styles.js';
+import DrawImage from '../../assets/img/drawImage.png';
 
 export function Home() {
 	return (
-		<main className={styles.main}>
+		<>
+		<MainStyles>
 			<h1>Create your first project</h1>
 			<p>
-			Create, Access and Share your projects with the team!
-			It's easy it's fast!
+				Create, Access and Share your projects with the team!
+				It's easy it's fast!
 			</p>
-			
+
 			<Button to="/newProject" name="Create Project" />
-					
-			<div className={styles.content}>
-				<img src={DrawImage} alt="Desenho de Capa" />
-			</div>
-		</main>
+			
+			<img src={DrawImage} alt="Desenho de Capa" />
+			
+		</MainStyles>
+		</>
 	)
 }
 

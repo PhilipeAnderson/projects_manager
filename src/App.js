@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import { Home } from './pages/Home/Home';
-import { Contact } from './pages/Contact/Conatact';
+
 import { NewProject } from './pages/NewProject/NewProject';
 import { Projects } from './pages/Projects/Projects';
 import { Project } from './pages/Projects/Project';
@@ -24,7 +24,6 @@ function App() {
             <Route path="/newproject" element={<NewProject />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/project/:id" element={<Project />} />
-            <Route path="/contact" element={<Contact />} />
         </Routes>
       </Container>
       <Footer />
