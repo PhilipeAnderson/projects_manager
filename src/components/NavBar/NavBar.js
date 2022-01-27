@@ -7,7 +7,6 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 export function NavBar() {
 	return (
 		<Container>
-			
 			<MenuIcon>
 				<GiHamburgerMenu/>
 			</MenuIcon>

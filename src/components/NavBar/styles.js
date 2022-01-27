@@ -48,6 +48,7 @@ export const MenuIcon = styled.div`
 	background-color: #00a1b3;
 	margin-top: -9px;
   margin-left: 229px;
+	cursor: pointer;
 
 	@media(max-width: 720px){
 			visibility: visible;
