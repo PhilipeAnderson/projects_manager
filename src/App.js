@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import { Home } from './pages/Home/Home';
 
 import { NewProject } from './pages/NewProject/NewProject';
-import { Projects } from './pages/Projects/Projects';
+import { Projects } from './pages/Projects/Projects/Projects';
 import { Project } from './pages/Projects/Project';
 
 import { Header } from './components/Header/Header';

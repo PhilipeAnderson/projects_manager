@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { ProjectCard } from './ProjectCard';
-import { Container } from '../../Layout/Container';
-import { Message } from '../../Layout/Message';
-import { Loading } from '../../Layout/Loading/Loading';
-import { Button } from '../../components/Button/Button';
+import { ProjectCard } from './../ProjectCard/ProjectCard';
+import { Message } from '../../../Layout/Message';
+import { Loading } from '../../../Layout/Loading/Loading';
+import { Button } from '../../../components/Button/Button';
 
-import styles from './Projects.module.css';
+import { ContainerProjects } from './styles.js';
 
   export function Projects() {
 
@@ -51,14 +50,14 @@ import styles from './Projects.module.css';
   }
 
   return (
-    <div className={styles.projects_container}>
-      <div className={styles.title_container}>
+    <ContainerProjects>
+      <header>
         <h1>My Projects</h1>
         <Button to="/newProject" name="Create Project" />
-      </div>
+      </header>
       {message && <Message msg={message} type="success" />}
       {projectMessage && <Message msg={projectMessage} type="success" />}
-      <Container customClass="start">
+      <main customClass="start">
         {projects.length > 0 && projects.map(project => {
           return(
             <ProjectCard
@@ -71,11 +70,12 @@ import styles from './Projects.module.css';
             />
           )
         })}
+      </main>
+
         {!removeLoading && <Loading />}
         {removeLoading && projects.length === 0 && (
           <p>Não há projetos cadastrados!</p>
         )}
-      </Container>
-    </div>
+    </ContainerProjects>
   )
 }
