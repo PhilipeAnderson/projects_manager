@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Modal from 'react-modal/lib/components/Modal';
 import { Link } from 'react-router-dom';
+
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { RiCloseFill } from 'react-icons/ri';
 
 import { Container, MenuIcon, MenuModal} from './styles.js';
 
@@ -42,15 +44,17 @@ export function NavBar() {
 				overlayClassName="overlay"
 				className="content"
 			>
+				<div>
+					<RiCloseFill onClick={handleMenuCloseModal}/>
+				</div>
 				<MenuModal>
-					
-					<li>
+					<li onClick={handleMenuCloseModal}>
 						<Link to="/">Home</Link>
 					</li>
-					<li>
+					<li onClick={handleMenuCloseModal}>
 						<Link to="/newproject">New Project</Link>
 					</li>
-					<li>
+					<li onClick={handleMenuCloseModal}>
 						<Link to="/projects">Projects</Link>
 					</li>
 				</MenuModal>

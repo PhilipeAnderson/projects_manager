@@ -63,5 +63,14 @@ export const GlobalStyle = createGlobalStyle`
     position: relative;
     border: none;
     border-radius: 1rem;
+
+    div {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
   }
 `;
