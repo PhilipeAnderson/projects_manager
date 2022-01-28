@@ -3,7 +3,7 @@ import Modal from 'react-modal/lib/components/Modal';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-import { Container, MenuIcon} from './styles.js';
+import { Container, MenuIcon, MenuModal} from './styles.js';
 
 
 export function NavBar() {
@@ -39,9 +39,11 @@ export function NavBar() {
 			<Modal
 				isOpen={isMenuOpen}
 				onRequestClose={handleMenuCloseModal}
+				overlayClassName="overlay"
+				className="content"
 			>
-				<ul>
-					<p onClick={handleMenuCloseModal}>X</p>
+				<MenuModal>
+					
 					<li>
 						<Link to="/">Home</Link>
 					</li>
@@ -51,7 +53,7 @@ export function NavBar() {
 					<li>
 						<Link to="/projects">Projects</Link>
 					</li>
-				</ul>
+				</MenuModal>
 			</Modal>	
 		</Container>
 	)

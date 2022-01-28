@@ -30,6 +30,8 @@ export const Container = styled.nav`
 			visibility: hidden;
 		}
 	}
+
+	
 }
 
 `;
@@ -61,5 +63,27 @@ export const MenuIcon = styled.div`
 	@media(max-width: 430px){
 			margin-top: 0px;
 			margin-left: 190px;
+	}
+`;
+
+export const MenuModal = styled.ul`
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1.5rem;
+	border: none;
+	padding: 2rem 0.5rem;
+	
+	
+	li {
+		list-style: none;
+		margin-bottom: 10px;
+	}
+	
+	a {
+		color: #fff;
+		text-decoration: none;
 	}
 `;
