@@ -14,12 +14,14 @@ export function ProjectCard({ id, name, budget, category, handleRemove}) {
   return(
     <div className={styles.projectCard}>
       <h4>{ name }</h4>
-      <p>
-        <span>Orçamento</span> R$:{ budget }
-      </p>
-      <p className={styles.categoryText}>
-        <span className={`${styles[category.toLowerCase()]}`}></span> { category }
-      </p>
+      <div>
+        <p>
+          <span>Orçamento</span> R$:{ budget }
+        </p>
+        <p className={styles.categoryText}>
+          <span className={`${styles[category.toLowerCase()]}`}></span> { category }
+        </p>
+      </div>
       <div className={styles.project_card_actions}>
         <Link to={`/project/${id}`}>
           <BsPencil /> 

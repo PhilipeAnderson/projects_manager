@@ -1,21 +1,22 @@
 .projectCard {
-  padding: 1em;
-  border: 1px solid #7a7a7a;
+  padding: 1rem;
+  border: 1px solid #a3a3a3;
+  background: #7a7a7a;
   border-radius: 5px;
-  width: 24%;
-  margin: 0.5%;
+  width: 100%;
+  margin-bottom: 10rem;
 }
 
 .projectCard h4 {
   background-color: var(--colorDefault);
   color: var(--colorFont);
   padding: 0.4em;
-  margin-bottom: 1.3em;
-  font-size: 1.32em;
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
 }
 
 .projectCard p {
-  color: #7a7a7a;
+  color: var(--colorFont);
   margin-bottom:1em;
 }
 
@@ -45,7 +46,7 @@
   background-color: #a0e7e5;
 }
 
-.categoryText .design {
+.categoryText .designer {
   background-color: #b4f8c8;
 }
 
@@ -63,13 +64,14 @@
 .project_card_actions button {
   text-decoration: none;
   border: none;
-  background-color: #fff;
-  color: #222;
-  font-size: 0.9em;
+  background-color: var(--colorDefault);
+  color: var(--colorFont);
+  font-size: 0.8em;
   padding: 0.6em 1em;
   margin-right: 1em;
   cursor: pointer;
-  border: 1px solid #222;
+  border: none;
+  border-radius: 0.2rem;
   transition: 0.5s;
   display: flex;
   align-items: center;

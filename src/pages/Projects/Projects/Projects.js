@@ -34,7 +34,7 @@ import { ContainerProjects } from './styles.js';
     })
     .catch(err => console.log(err))
     }, 1300)
-  }, []);
+  }, [])
 
   function removeProject(id) {
     fetch(`http://localhost:5000/projects/${id}`, {

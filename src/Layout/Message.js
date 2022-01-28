@@ -30,7 +30,7 @@ export function Message({ msg, type }){
       <div className={`${styles.message} ${styles[type]}`}>
         { msg }
       </div>
-    )};
+    )}
     </>
   )
 }

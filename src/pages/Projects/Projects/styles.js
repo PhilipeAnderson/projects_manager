@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerProjects = styled.div`
-  padding: 2em;
+  padding: 2rem;
   width: 100%;
 
   header {
@@ -17,8 +17,10 @@ export const ContainerProjects = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
+    gap: 1rem;
   }
 
   div {
