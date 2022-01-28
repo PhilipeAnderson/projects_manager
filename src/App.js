@@ -1,5 +1,5 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Modal from 'react-modal';
 
 import { Home } from './pages/Home/Home';
 
@@ -12,10 +12,11 @@ import { Footer } from './components/Footer/Footer';
 
 import { GlobalStyle } from './global.js';
 import { Container } from './Layout/Container';
-import { MenuModal } from './components/MenuModal/MenuModal';
 
+Modal.setAppElement('#root');
 
 function App() {
+
   return (
     <Router>
       <Header />
@@ -29,12 +30,7 @@ function App() {
       </Container>
       <Footer />
       <GlobalStyle />
-      <MenuModal 
-        //isOpen={isNewTrasactionModalOpen}
-        //onRequestClose={handleCloseNewTransactionModal}
-      />
     </Router>
-    
   );
 }
 
