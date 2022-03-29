@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ProjectForm } from '../../components/ProjectForm/ProjectForm';
 
-import styles from './NewProject.module.css';
+import { Container } from './styles.js';
 
 export function NewProject(){
 
@@ -28,10 +28,10 @@ export function NewProject(){
 
 
     return (
-        <div className={styles.container}>
+        <Container >
             <h1>Insert a new project</h1>
             <p>Create a new project and add services to it</p>
             <ProjectForm handleSubmit={ createPost } whatHappen="Created Project"/>
-        </div>
+        </Container>
     )
 }

@@ -1,17 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "Venda de Ingressos",
-      "budget": "1221",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": 1,
