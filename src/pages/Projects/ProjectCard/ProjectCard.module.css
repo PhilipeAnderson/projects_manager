@@ -1,28 +1,4 @@
-.projectCard {
-  padding: 1rem;
-  border: 1px solid #a3a3a3;
-  background: #7a7a7a;
-  border-radius: 5px;
-  width: 100%;
-  margin-bottom: 10rem;
-}
 
-.projectCard h4 {
-  background-color: var(--colorDefault);
-  color: var(--colorFont);
-  padding: 0.4em;
-  margin-bottom: 0.5em;
-  font-size: 1.3em;
-}
-
-.projectCard p {
-  color: var(--colorFont);
-  margin-bottom:1em;
-}
-
-.projectCard p span {
-  font-weight: bold;
-}
 
 .categoryText {
   display: flex;

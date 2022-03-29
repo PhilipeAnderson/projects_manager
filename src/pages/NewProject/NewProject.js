@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ProjectForm } from '../../components/ProjectForm/ProjectForm';
 
-import { Container } from './styles.js';
+import { Container } from './styles';
 
 export function NewProject(){
 

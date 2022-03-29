@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 
 import styles from './ProjectCard.module.css';
-
+import { Container } from './styles';
 
 export function ProjectCard({ id, name, budget, category, handleRemove}) {
 
@@ -12,7 +12,7 @@ export function ProjectCard({ id, name, budget, category, handleRemove}) {
   }
 
   return(
-    <div className={styles.projectCard}>
+    <Container >
       <h4>{ name }</h4>
       <div>
         <p>
@@ -32,6 +32,6 @@ export function ProjectCard({ id, name, budget, category, handleRemove}) {
           Excluir
         </button>
       </div>
-    </div>
+    </Container >
   )
 }
