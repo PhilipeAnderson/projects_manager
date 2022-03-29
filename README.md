@@ -1,8 +1,14 @@
 # Projects Manager
 
+<div style="display: inline_block"><br>
+  <img align="center" alt="Philipe-Js" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+  <img align="center" alt="Philipe-React" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+</div>
+
+<br />
+
 ### This is a plataform web that created for put my knowloedge to the test.
   <img src="./src/assets/img/screenHomePage.png" alt="screen Home Page" />
-Guided by Teacher Matheus Battisti.
 
 Basically the platform runs in a ReactJs environment with a Json Server on the frontend.
 The project is still under construction because I've been switching from css module to styled-components.
