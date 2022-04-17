@@ -8,6 +8,7 @@
 <br />
 
 ### This is a plataform web that created for put my knowloedge to the test.
+  <h3>Check this project 😃 <a href="https://master--romantic-cray-6c92e0.netlify.app/" target="_blank" rel="noreferrer"> Projects Manager</a></h3>
   <img src="./src/assets/img/screenHomePage.png" alt="screen Home Page" />
 
 Basically the platform runs in a ReactJs environment with a Json Server on the frontend.
